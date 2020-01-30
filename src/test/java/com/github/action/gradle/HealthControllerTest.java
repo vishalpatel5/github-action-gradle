@@ -18,9 +18,9 @@ public class HealthControllerTest {
 		Assert.assertEquals("I am healthy",controller.checkHEalth());
 	}
 
-//	@Test
-//	public void checkHealthFail() {
-//		Assert.assertEquals("I not healthy!",controller.checkHEalth());
-//	}
+	@Test
+	public void checkHealthFail() {
+		Assert.assertEquals("I not healthy!",controller.checkHEalth());
+	}
 
 }
