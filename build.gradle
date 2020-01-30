@@ -17,6 +17,10 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	testCompile('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'ch.qos.logback', module: 'logback-classic'
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+	}
 }
 
 test {
