@@ -23,6 +23,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Notify
       uses: innocarpe/actions-slack@v1
       with:
         status: ${{ job.status }} # Required
