@@ -1,4 +1,4 @@
-name: Insight Timer Graph Service CI
+name: Gradle Build
 
 on: [push]
 
@@ -22,7 +22,7 @@ jobs:
     - uses: 8398a7/action-slack@v2
       with:
         status: ${{ job.status }}
-        author_name: Integration Test # default: 8398a7@action-slack
+        author_name: Insight Timer Graph Service CI # default: 8398a7@action-slack
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # Required
